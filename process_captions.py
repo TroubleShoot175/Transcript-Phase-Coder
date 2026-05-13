@@ -74,7 +74,7 @@ def strip_tags(text: str) -> str:
 
 # Ordered sequence of (trigger_pattern, phase_that_starts_after_trigger).
 # Consumed one at a time as matching rows are encountered.
-_STARTS_NOW = re.compile(r"your time starts now", re.IGNORECASE)
+_STARTS_NOW = re.compile(r"your time starts now|your \d+ minute timer starts now", re.IGNORECASE)
 _TIME_UP    = re.compile(r"your time is up|stop generating ideas", re.IGNORECASE)
 
 _TRANSITIONS = [
