@@ -10,18 +10,25 @@ Supported formats:
 Meeting transcript output columns:
   time, speaker, phase, content
 
-Phase detection (from Experimenter speech, case-insensitive):
-  introduction       — before the 1st "your time starts now"
-  ideaGenerationOne  — after the 1st "your time starts now"
-  ideaGenerationTwo  — after the 2nd "your time starts now"
-  ideaSelection      — after the 3rd "your time starts now"
-  debriefing         — after the last "your time is up"
+Phase detection (from any speaker's content, case-insensitive):
+  The experimenter's key phrases drive phase transitions in this order:
+
+  introduction       — start of file until 1st "your time starts now"
+  ideaGenerationOne  — 1st "your time starts now" until 1st "your time is up"
+  break              — 1st "your time is up" until 2nd "your time starts now"
+  ideaGenerationTwo  — 2nd "your time starts now" until 2nd "your time is up"
+  break              — 2nd "your time is up" until 3rd "your time starts now"
+  ideaSelection      — 3rd "your time starts now" until 3rd "your time is up"
+  debriefing         — 3rd "your time is up" until end of file
+
+  If a session is shorter (e.g. only 1 generation round), later phases will
+  simply be absent and the script will report which phases were found.
 
 Usage:
     python process_captions.py transcript.txt
     python process_captions.py transcript.txt -o out.csv
-    python process_captions.py transcript.txt --phases ideaGenerationOne,ideaGenerationTwo
     python process_captions.py transcript.txt --list-phases
+    python process_captions.py transcript.txt --phases ideaGenerationOne,ideaGenerationTwo
     python process_captions.py input.srt
     python process_captions.py input.vtt -o output.csv --include-timestamps
 """
@@ -30,6 +37,7 @@ import re
 import csv
 import sys
 import argparse
+from collections import Counter
 from pathlib import Path
 
 
@@ -64,39 +72,69 @@ def strip_tags(text: str) -> str:
 # Phase detection
 # ---------------------------------------------------------------------------
 
-# Ordered sequence of transition triggers (checked against Experimenter speech).
-# Each tuple: (phrase_pattern, next_phase_name)
-# Transitions are consumed in order — the first match advances to the next phase.
+# Ordered sequence of (trigger_pattern, phase_that_starts_after_trigger).
+# Consumed one at a time as matching rows are encountered.
 _TRANSITIONS = [
     (re.compile(r"your time starts now", re.IGNORECASE), "ideaGenerationOne"),
+    (re.compile(r"your time is up",      re.IGNORECASE), "break"),
     (re.compile(r"your time starts now", re.IGNORECASE), "ideaGenerationTwo"),
+    (re.compile(r"your time is up",      re.IGNORECASE), "break"),
     (re.compile(r"your time starts now", re.IGNORECASE), "ideaSelection"),
     (re.compile(r"your time is up",      re.IGNORECASE), "debriefing"),
 ]
 
-ALL_PHASES = ["introduction", "ideaGenerationOne", "ideaGenerationTwo", "ideaSelection", "debriefing"]
+# Canonical order for display / filtering (break appears once as a filter name)
+ALL_PHASES = [
+    "introduction",
+    "ideaGenerationOne",
+    "break",
+    "ideaGenerationTwo",
+    "ideaSelection",
+    "debriefing",
+]
 
 
-def assign_phases(rows: list[dict]) -> list[dict]:
+def assign_phases(rows: list[dict]) -> tuple[list[dict], list[str]]:
     """
-    Walk through rows in order and assign a 'phase' value to each one.
-    Phase transitions are triggered by the Experimenter's speech matching
-    the phrases defined in _TRANSITIONS, consumed in sequence.
+    Walk rows in order, assigning a 'phase' to each one by consuming
+    _TRANSITIONS as their trigger phrases are encountered.
+
+    Returns:
+        rows        — same list, each row now has a 'phase' key
+        warnings    — list of human-readable warning strings (missing phases, etc.)
     """
-    pending = list(_TRANSITIONS)   # transitions not yet triggered
+    pending = list(_TRANSITIONS)
     current_phase = "introduction"
+    triggered: list[str] = []
 
     for row in rows:
-        # Check whether this row triggers the next transition
         if pending:
             pattern, next_phase = pending[0]
             if pattern.search(row["content"]):
                 current_phase = next_phase
+                triggered.append(next_phase)
                 pending.pop(0)
-
         row["phase"] = current_phase
 
-    return rows
+    # Build warnings for any transitions that were never triggered
+    warnings: list[str] = []
+    if pending:
+        phases_found = set(r["phase"] for r in rows)
+        missing_phases = [phase for _, phase in pending if phase not in phases_found]
+        # Deduplicate while preserving order
+        seen: set[str] = set()
+        unique_missing: list[str] = []
+        for p in missing_phases:
+            if p not in seen:
+                seen.add(p)
+                unique_missing.append(p)
+        if unique_missing:
+            warnings.append(
+                f"Note: the following phase(s) were never triggered in this file "
+                f"(key phrase not found): {', '.join(unique_missing)}"
+            )
+
+    return rows, warnings
 
 
 # ---------------------------------------------------------------------------
@@ -272,15 +310,15 @@ def main():
     parser.add_argument(
         "--phases",
         help=(
-            "Comma-separated list of phases to include in the output (transcript mode only).\n"
-            f"Valid phases: {', '.join(ALL_PHASES)}\n"
+            "Comma-separated list of phases to keep (transcript mode only).\n"
+            f"Valid values: {', '.join(ALL_PHASES)}\n"
             "Example: --phases ideaGenerationOne,ideaGenerationTwo"
         ),
     )
     parser.add_argument(
         "--list-phases",
         action="store_true",
-        help="Print a summary of how many rows fall in each phase, then exit.",
+        help="Print a phase breakdown with row counts and first/last timestamps, then exit.",
     )
     parser.add_argument(
         "--include-timestamps",
@@ -298,27 +336,42 @@ def main():
     content = input_path.read_text(encoding="utf-8-sig")
     fmt = detect_format(content, input_path)
 
+    # ---- Transcript mode -------------------------------------------------
     if fmt == "transcript":
         rows = parse_transcript(content)
         if not rows:
             print("Warning: no entries found in transcript.", file=sys.stderr)
             sys.exit(1)
 
-        rows = assign_phases(rows)
+        rows, warnings = assign_phases(rows)
 
-        # --list-phases: show phase breakdown and exit
+        for w in warnings:
+            print(f"WARNING: {w}", file=sys.stderr)
+
+        # --list-phases: summary and exit
         if args.list_phases:
-            from collections import Counter
             counts = Counter(r["phase"] for r in rows)
-            print(f"{'Phase':<22} {'Rows':>6}")
-            print("-" * 30)
+            # first/last timestamps per phase
+            first_time: dict[str, str] = {}
+            last_time: dict[str, str] = {}
+            for r in rows:
+                p = r["phase"]
+                if p not in first_time:
+                    first_time[p] = r["time"]
+                last_time[p] = r["time"]
+
+            print(f"\n{'Phase':<22} {'Rows':>5}  {'First':>8}  {'Last':>8}")
+            print("-" * 52)
             for phase in ALL_PHASES:
-                print(f"{phase:<22} {counts.get(phase, 0):>6}")
-            print("-" * 30)
-            print(f"{'TOTAL':<22} {len(rows):>6}")
+                c = counts.get(phase, 0)
+                ft = first_time.get(phase, "—")
+                lt = last_time.get(phase, "—")
+                print(f"{phase:<22} {c:>5}  {ft:>8}  {lt:>8}")
+            print("-" * 52)
+            print(f"{'TOTAL':<22} {len(rows):>5}\n")
             return
 
-        # --phases: filter rows
+        # --phases: filter
         if args.phases:
             requested = [p.strip() for p in args.phases.split(",")]
             invalid = [p for p in requested if p not in ALL_PHASES]
@@ -332,12 +385,13 @@ def main():
                 sys.exit(1)
 
         write_transcript_csv(rows, output_path)
-        phases_present = sorted(set(r["phase"] for r in rows), key=ALL_PHASES.index)
+        phases_present = sorted(set(r["phase"] for r in rows), key=lambda p: ALL_PHASES.index(p))
         print(
             f"Done: {len(rows)} entries written to {output_path}\n"
             f"      Phases included: {', '.join(phases_present)}"
         )
 
+    # ---- VTT mode --------------------------------------------------------
     elif fmt == "vtt":
         cues = parse_vtt(content)
         if not cues:
@@ -346,6 +400,7 @@ def main():
         write_subtitle_csv(cues, output_path, args.include_timestamps)
         print(f"Done: {len(cues)} cues written to {output_path}")
 
+    # ---- SRT mode --------------------------------------------------------
     else:
         cues = parse_srt(content)
         if not cues:
