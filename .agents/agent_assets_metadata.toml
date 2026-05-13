@@ -6,3 +6,9 @@ id = "QRbk8ROR227OfiKt5EkbT"
 uri = "file://attached_assets/meeting_saved_closed_caption_1778689693292.csv"
 type = "table"
 title = "meeting_transcript_with_phases.csv"
+
+[[outputs]]
+id = "2OJAuZjo8ToWBjfoieF7J"
+uri = "file://process_captions_scripts.tar.gz"
+type = "unspecified"
+title = "process_captions_scripts.tar.gz"
