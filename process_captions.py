@@ -74,13 +74,16 @@ def strip_tags(text: str) -> str:
 
 # Ordered sequence of (trigger_pattern, phase_that_starts_after_trigger).
 # Consumed one at a time as matching rows are encountered.
+_STARTS_NOW = re.compile(r"your time starts now", re.IGNORECASE)
+_TIME_UP    = re.compile(r"your time is up|stop generating ideas", re.IGNORECASE)
+
 _TRANSITIONS = [
-    (re.compile(r"your time starts now", re.IGNORECASE), "ideaGenerationOne"),
-    (re.compile(r"your time is up",      re.IGNORECASE), "break"),
-    (re.compile(r"your time starts now", re.IGNORECASE), "ideaGenerationTwo"),
-    (re.compile(r"your time is up",      re.IGNORECASE), "break"),
-    (re.compile(r"your time starts now", re.IGNORECASE), "ideaSelection"),
-    (re.compile(r"your time is up",      re.IGNORECASE), "debriefing"),
+    (_STARTS_NOW, "ideaGenerationOne"),
+    (_TIME_UP,    "break"),
+    (_STARTS_NOW, "ideaGenerationTwo"),
+    (_TIME_UP,    "break"),
+    (_STARTS_NOW, "ideaSelection"),
+    (_TIME_UP,    "debriefing"),
 ]
 
 # Canonical order for display / filtering (break appears once as a filter name)
