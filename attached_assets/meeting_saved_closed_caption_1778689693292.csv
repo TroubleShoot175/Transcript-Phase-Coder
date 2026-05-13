@@ -205,222 +205,222 @@ time,speaker,phase,content
 17:26:01,G1P1,ideaGenerationOne,"like, making that known on the concise student schedule."
 17:26:05,G1P1,ideaGenerationOne,And they'd actually be right.
 17:26:08,G1P1,ideaGenerationOne,Um…
-17:26:26,Experimenter 0,ideaGenerationOne,"Okay, if you could go ahead and stop generating ideas."
-17:26:30,Experimenter 0,ideaGenerationOne,"Uh, we're going to move into the next session now. In this session,"
-17:26:34,Experimenter 0,ideaGenerationOne,"Uh, you will once again brainstorm ideas for the same problem following Osborne's rules. However, this time,"
-17:26:40,Experimenter 0,ideaGenerationOne,You will receive examples that will help you generate more ideas on the same problem.
-17:26:44,Experimenter 0,ideaGenerationOne,"As you brainstormed, you may have noticed that ideas came quickly at first, and then began to slow down over time."
-17:26:50,Experimenter 0,ideaGenerationOne,"Uh, this is a common pattern in brainstorming. To help you generate more ideas in this session, we will generate examples using an AI tool."
-17:26:58,Experimenter 0,ideaGenerationOne,"I'm going to select participant 2,"
-17:27:01,Experimenter 0,ideaGenerationOne,"To assist with this. Uh, Participant 2,"
-17:27:04,Experimenter 0,ideaGenerationOne,"Uh, please share your screen with the group."
-17:27:06,Experimenter 0,ideaGenerationOne,And I've got to make sure you can do that.
-17:27:09,Experimenter 0,ideaGenerationOne,should be able to…
-17:27:14,Experimenter 0,ideaGenerationOne,Are you able to share your screen?
-17:27:19,G1P2,ideaGenerationOne,I'm sending a request.
-17:27:19,Experimenter 0,ideaGenerationOne,"Okay, perfect. Alright."
-17:27:41,Experimenter 0,ideaGenerationOne,"Perfect, okay. And if you could go ahead, and I see that you have a web browser open, which is what I was going to ask you next."
-17:27:47,Experimenter 0,ideaGenerationOne,"Um, would you be willing to use CTRL to press Ctrl-Shift-N at the same time on your keyboard?"
-17:27:55,G1P2,ideaGenerationOne,Ctrl-Shift-N.
-17:27:56,Experimenter 0,ideaGenerationOne,Yes.
-17:28:00,Experimenter 0,ideaGenerationOne,Perfect. And so…
-17:28:04,Experimenter 0,ideaGenerationOne,What I'm gonna do is I have a link for you to go to.
-17:28:08,Experimenter 0,ideaGenerationOne,"If you could please, uh, copy and paste that link."
-17:28:08,G1P2,ideaGenerationOne,Okay.
-17:28:11,Experimenter 0,ideaGenerationOne,"Uh, into the top of the search bar."
-17:28:20,G1P2,ideaGenerationOne,Boom!
-17:28:37,G1P2,ideaGenerationOne,In the search bar?
-17:28:37,Experimenter 0,ideaGenerationOne,Yes.
-17:28:40,Experimenter 0,ideaGenerationOne,Perfect. Okay.
-17:28:44,Experimenter 0,ideaGenerationOne,"Um… now that you have that, I'm going to also share with you"
-17:28:50,Experimenter 0,ideaGenerationOne,prompt…
-17:28:52,Experimenter 0,ideaGenerationOne,to give to the AI tool.
-17:28:56,Experimenter 0,ideaGenerationOne,"Here's that prompt. If you could go ahead and copy and paste that, uh, from the…"
-17:29:01,Experimenter 0,ideaGenerationOne,"chat into the, uh,"
-17:29:03,Experimenter 0,ideaGenerationOne,bar that's titled Ask Anything.
-17:29:15,Experimenter 0,ideaGenerationOne,Perfect.
-17:29:17,Experimenter 0,ideaGenerationOne,"Awesome. And then, if you scroll down,"
-17:29:20,Experimenter 0,ideaGenerationOne,I believe that there is a button that has two squares.
-17:29:23,Experimenter 0,ideaGenerationOne,And that should copy the contents.
-17:29:26,Experimenter 0,ideaGenerationOne,And then if you could paste those contents into the Zoom chat.
-17:29:42,Experimenter 0,ideaGenerationOne,"Perfect, okay, and you can go ahead and stop sharing your screen."
-17:29:52,Experimenter 0,ideaGenerationOne,"I believe the same way that you shared it, there should be, uh… it should be replaced with the stop button now."
-17:30:06,G1P2,ideaGenerationOne,Where?
-17:30:07,Experimenter 0,ideaGenerationOne,Um…
-17:30:11,Experimenter 0,ideaGenerationOne,"It should be right where you had placed, uh, on the bar. Perfect. Excellent."
-17:30:13,G1P2,ideaGenerationOne,"Oh, there it is."
-17:30:15,Experimenter 0,ideaGenerationOne,"Okay, and so… let me see where I am here…"
-17:30:17,G1P2,ideaGenerationOne,Okay.
-17:30:27,Experimenter 0,ideaGenerationOne,"Okay, um, you both can see… now see the ideas that were generated, uh…"
-17:30:33,Experimenter 0,ideaGenerationOne,"from the AI, yes?"
-17:30:35,Experimenter 0,ideaGenerationOne,"Okay, um, so once again…"
-17:30:39,Experimenter 0,ideaGenerationOne,"that probably will be working on today is called the University Problem. Basically, we would like you to generate ideas or ways to improve your university."
-17:30:45,Experimenter 0,ideaGenerationOne,Any suggestions you have about how to make the university better are appropriate. You have 10 minutes to verbally brainstorm on this.
-17:30:51,Experimenter 0,ideaGenerationOne,"Uh, even if you are done before the 10 minutes,"
-17:30:54,Experimenter 0,ideaGenerationOne,"keep trying to generate ideas, I will return when the 10 minutes are up."
-17:31:00,Experimenter 0,ideaGenerationOne,Your…
-17:31:04,Experimenter 0,ideaGenerationOne,your 10-minute timer starts now.
-17:31:09,G1P1,ideaGenerationOne,"Okay, um…"
-17:31:13,G1P1,ideaGenerationOne,"So, starting with number 1."
-17:31:18,G1P1,ideaGenerationOne,That's already available.
-17:31:21,G1P1,ideaGenerationOne,That's how it works.
-17:31:25,G1P1,ideaGenerationOne,"Um, as long as…"
-17:31:26,G1P2,ideaGenerationOne,"Well, having…"
-17:31:27,G1P1,ideaGenerationOne,Sorry.
-17:31:27,G1P2,ideaGenerationOne,"Especially for the higher classes, having more availability."
-17:31:33,G1P1,ideaGenerationOne,Yeah.
-17:31:34,G1P2,ideaGenerationOne,"Instead of having them so close together or overlapping, so you can only take one option instead of two or whatnot."
-17:31:41,G1P1,ideaGenerationOne,Yeah.
-17:31:43,G1P2,ideaGenerationOne,Um…
-17:31:47,G1P1,ideaGenerationOne,"more options, more opportunities."
-17:31:49,G1P2,ideaGenerationOne,Mm-hmm.
-17:31:52,G1P2,ideaGenerationOne,Having a…
-17:31:54,G1P2,ideaGenerationOne,"having an app or a website that we can do tutoring one-on-one with, that would be awesome."
-17:32:00,G1P1,ideaGenerationOne,"Yeah. Being able to, like,"
-17:32:01,G1P2,ideaGenerationOne,Instead of having finance groups.
-17:32:03,G1P1,ideaGenerationOne,Sorry. Being able to actually reach
-17:32:07,G1P1,ideaGenerationOne,people easier?
-17:32:09,G1P2,ideaGenerationOne,Mm-hmm.
-17:32:11,G1P1,ideaGenerationOne,Um…
-17:32:15,G1P2,ideaGenerationOne,"And having the accessibility, if it's online, for people that are commuters and stuff, instead of having to come up to"
-17:32:21,G1P2,ideaGenerationOne,or come up to Stevenville or Tarleton.
-17:32:24,G1P1,ideaGenerationOne,Mm-hmm.
-17:32:24,G1P2,ideaGenerationOne,"to do so. Um, oh!"
-17:32:32,G1P1,ideaGenerationOne,Um…
-17:32:33,G1P2,ideaGenerationOne,I think we need a more interactive mobile app.
-17:32:36,G1P2,ideaGenerationOne,Maybe that could be where…
-17:32:36,G1P1,ideaGenerationOne,I agree.
-17:32:38,G1P2,ideaGenerationOne,"You can see where available parking spots are, so that I could sensor whenever you go in and out for everywhere."
-17:32:44,G1P2,ideaGenerationOne,"And they'll tell you… and it has a limit on them, and it tells you who goes in and out, so you know if there's availability."
-17:32:52,G1P1,ideaGenerationOne,that… definitely a more…
-17:32:55,G1P1,ideaGenerationOne,"interactive, and like…"
-17:32:57,G1P2,ideaGenerationOne,Yes.
-17:32:58,G1P1,ideaGenerationOne,"Unless they're with, like, food options."
-17:33:02,G1P1,ideaGenerationOne,"estimate for, like, how long something might be."
-17:33:06,G1P1,ideaGenerationOne,to take. So it's like…
-17:33:09,G1P1,ideaGenerationOne,"Hey, if this is a busy time, it's gonna be a while."
-17:33:13,G1P2,ideaGenerationOne,"Or being able to request the transportation that you mentioned earlier on the app, be like, hey, I'm all the way at the football field, I need to go here."
-17:33:13,G1P1,ideaGenerationOne,Um…
-17:33:22,G1P1,ideaGenerationOne,Yes.
-17:33:25,G1P1,ideaGenerationOne,Um…
-17:33:26,G1P1,ideaGenerationOne,"Basically, app for everything."
-17:33:29,G1P1,ideaGenerationOne,Um…
-17:33:30,G1P2,ideaGenerationOne,"transportation to get to other food establishments, like people that live on campus that don't have vehicles, or don't want to leave because if they leave, they don't have parking."
-17:33:37,G1P2,ideaGenerationOne,"They can be like, oh, I want to request a ride to this food place."
-17:33:42,G1P1,ideaGenerationOne,Yes.
-17:33:44,G1P2,ideaGenerationOne,"And it's just for students, not for everyone else in Steamville."
-17:33:47,G1P1,ideaGenerationOne,"Yeah,"
-17:33:50,G1P1,ideaGenerationOne,Um…
-17:33:52,G1P1,ideaGenerationOne,"Sustainability Challenge Program, where students can participate."
-17:33:57,G1P1,ideaGenerationOne,That sounds like… so…
-17:34:00,G1P1,ideaGenerationOne,Um…
-17:34:02,G1P1,ideaGenerationOne,"So, just reading it out loud, introduce a sustainability challenge program where students can participate in eco-friendly initiatives and earn rewards."
-17:34:13,G1P1,ideaGenerationOne,"I feel like that would be really fun, and just, like,"
-17:34:17,G1P1,ideaGenerationOne,"There can be different types of things. So, it's like…"
-17:34:22,G1P1,ideaGenerationOne,"if someone's not good at one thing, they can't, like, there's a different thing that they might be. Or, like,"
-17:34:29,G1P1,ideaGenerationOne,if there's something…
-17:34:31,G1P1,ideaGenerationOne,So there's different things where people will actually be interested.
-17:34:38,G1P1,ideaGenerationOne,"And, um…"
-17:34:40,G1P1,ideaGenerationOne,"And that can also help the, like, community."
-17:34:42,G1P2,ideaGenerationOne,"Yeah, but also getting rewards. People are reward-motivated, especially with food."
-17:34:48,G1P2,ideaGenerationOne,why I'm food-motivated.
-17:34:51,G1P2,ideaGenerationOne,"So, earnings for food, please?"
-17:34:52,G1P1,ideaGenerationOne,"Or it's like, you can, like, maybe if it's, like,"
-17:34:55,G1P1,ideaGenerationOne,"So it can be food, but it can also be, like, text inbox."
-17:34:59,G1P2,ideaGenerationOne,Mm-hmm.
-17:35:00,G1P1,ideaGenerationOne,"you earn some of that, and then some bucks can be used all over campus."
-17:35:04,G1P2,ideaGenerationOne,Yep.
-17:35:05,G1P1,ideaGenerationOne,I believe. Um…
-17:35:07,G1P1,ideaGenerationOne,virtual mentor… mentorship program connecting students with alumni for career guidance and networking.
-17:35:13,G1P2,ideaGenerationOne,That would be awesome for… especially for the master's level psychology.
-17:35:19,G1P1,ideaGenerationOne,Yes. Um…
-17:35:21,G1P2,ideaGenerationOne,"Even undergrad, too, because a lot of undergrad"
-17:35:25,G1P2,ideaGenerationOne,need to have the mentorship so they know what to do.
-17:35:28,G1P2,ideaGenerationOne,especially with the specialization stuff.
-17:35:31,G1P1,ideaGenerationOne,"I think just some kind of, like…"
-17:35:35,G1P1,ideaGenerationOne,Communication system where it's like…
-17:35:38,G1P1,ideaGenerationOne,you're able to…
-17:35:41,G1P1,ideaGenerationOne,find people.
-17:35:43,G1P1,ideaGenerationOne,And… that…
-17:35:46,G1P1,ideaGenerationOne,"might be able to give you advice, or, um…"
-17:35:51,G1P1,ideaGenerationOne,Or it just might be…
-17:35:54,G1P1,ideaGenerationOne,able to talk through situations.
-17:35:56,G1P2,ideaGenerationOne,you lost what… I lost you.
-17:35:57,G1P2,ideaGenerationOne,Can't hear you.
-17:35:58,G1P1,ideaGenerationOne,"Oh, can you hear me now?"
-17:36:02,G1P1,ideaGenerationOne,Or is it just…
-17:36:06,G1P2,ideaGenerationOne,I can't hear you!
-17:36:07,G1P1,ideaGenerationOne,"Hello, hello, hello."
-17:36:11,G1P1,ideaGenerationOne,Hello?
-17:36:11,G1P2,ideaGenerationOne,I can hear you now.
-17:36:13,G1P2,ideaGenerationOne,"Yeah, I can hear you."
-17:36:17,G1P1,ideaGenerationOne,Can you hear me now.
-17:36:18,G1P2,ideaGenerationOne,Yeah.
-17:36:18,G1P1,ideaGenerationOne,"Okay, I don't know what. Um…"
-17:36:24,G1P1,ideaGenerationOne,"I was basically just continuing with the… just some type of, like, communication system."
-17:36:30,G1P1,ideaGenerationOne,"to be able to, like, talk through things where people might… but, like,"
-17:36:31,G1P2,ideaGenerationOne,Mm-hmm.
-17:36:38,G1P1,ideaGenerationOne,"In an interesting, not forced…"
-17:36:40,G1P1,ideaGenerationOne,"type of way. Or is, like…"
-17:36:41,G1P2,ideaGenerationOne,Yeah.
-17:36:43,G1P1,ideaGenerationOne,enjoyable.
-17:36:45,G1P2,ideaGenerationOne,Mm-hmm.
-17:36:45,G1P1,ideaGenerationOne,but also helpful.
-17:36:48,G1P2,ideaGenerationOne,Yeah.
-17:36:50,G1P2,ideaGenerationOne,"Well, also, if there's, like, a list, like, an app or a website where there's a list of alumni that's, like,"
-17:36:57,G1P2,ideaGenerationOne,"in whatever department you are, and then they're like, oh, these are the jobs that there is, so if you have an interest,"
-17:37:02,G1P2,ideaGenerationOne,"And something that you could talk to them, and then…"
-17:37:04,G1P2,ideaGenerationOne,"get the inside scoop on that before you make the decision, or to further your special…"
-17:37:10,G1P2,ideaGenerationOne,"specialization in that, or…"
-17:37:11,G1P2,ideaGenerationOne,"or pursue that in the future, be like, if this isn't for me,"
-17:37:15,G1P2,ideaGenerationOne,"That would be awesome to have that kind of stuff, because right now, you'd have to, like,"
-17:37:19,G1P2,ideaGenerationOne,"go out and go to these places, and not everybody's receptive of those kind of questions."
-17:37:24,G1P1,ideaGenerationOne,Yep.
-17:37:26,G1P1,ideaGenerationOne,Um…
-17:37:44,G1P2,ideaGenerationOne,We need better…
-17:37:47,G1P2,ideaGenerationOne,"like, mobile app to also…"
-17:37:49,G1P2,ideaGenerationOne,"going back to the mobile app on number 3, I feel like if they were to make a mobile app that actually had an… the announcements you said we need better announcements,"
-17:37:57,G1P2,ideaGenerationOne,"and programs and activities,"
-17:37:59,G1P2,ideaGenerationOne,"And, like, if they're gonna do get-togethers like that, I think they need to have it all in one place, instead of being like, oh, follow this on Instagram, this on Instagram, this on Instagram, or this on Facebook."
-17:38:07,G1P2,ideaGenerationOne,"And it's, like, all in one place, because, I mean, you can go to…"
-17:38:11,G1P2,ideaGenerationOne,"Tarleton State University, but…"
-17:38:13,G1P2,ideaGenerationOne,"they have to go through, like, all these different steps to get to the calendar, and then sometimes it's…"
-17:38:17,G1P2,ideaGenerationOne,"not always on there, because it's, like, pop-up kind of thing."
-17:38:22,G1P1,ideaGenerationOne,"And then, also just a variety of stuff."
-17:38:26,G1P1,ideaGenerationOne,"So, like, it's not just sports-type things."
-17:38:26,G1P2,ideaGenerationOne,Mm-hmm.
-17:38:30,G1P2,ideaGenerationOne,"Yes, yes."
-17:38:31,G1P1,ideaGenerationOne,"So, like…"
-17:38:35,G1P1,ideaGenerationOne,along… because…
-17:38:37,G1P1,ideaGenerationOne,if they're… yeah.
-17:38:41,G1P1,ideaGenerationOne,Um…
-17:38:51,G1P1,ideaGenerationOne,"I feel like more activities just for, like, gradu- like, grad students."
-17:38:56,G1P2,ideaGenerationOne,Mm-hmm.
-17:38:58,G1P1,ideaGenerationOne,Because I feel…
-17:39:02,G1P2,ideaGenerationOne,A lot of stuff happens while we're in class.
-17:39:04,G1P2,ideaGenerationOne,"Or it happens, and it's, like, advertised… well, not really advertised, but announced for… to the undergrad, or that is to the grad students."
-17:39:11,G1P1,ideaGenerationOne,Mm-hmm.
-17:39:12,G1P2,ideaGenerationOne,"towards leaning more towards them, like, oh, interact with…"
-17:39:15,G1P2,ideaGenerationOne,"other people, it's like, but I want to interact with"
-17:39:18,G1P2,ideaGenerationOne,"grad students. Outside of class, though."
-17:39:20,G1P1,ideaGenerationOne,Yeah.
-17:39:23,G1P1,ideaGenerationOne,Um…
-17:39:29,G1P2,ideaGenerationOne,"On a fun plane. Like, fun stuff, not…"
-17:39:32,G1P2,ideaGenerationOne,group projects and stuff.
-17:39:34,G1P2,ideaGenerationOne,That's the only interaction I do outside of class with other grad students.
-17:40:00,G1P2,ideaGenerationOne,"This might not be Tarleton-related, but this might be Stephenville-related, but having something that we can do."
-17:40:05,G1P2,ideaGenerationOne,besides drink or go shopping.
-17:40:08,G1P2,ideaGenerationOne,consumable.
-17:40:11,G1P2,ideaGenerationOne,"like an arcade or something, something for everyone to go out and do."
-17:40:16,G1P1,ideaGenerationOne,And opportunities that don't cost.
-17:40:19,G1P2,ideaGenerationOne,"Oh, yeah."
-17:40:19,G1P1,ideaGenerationOne,Too much.
-17:40:35,G1P1,ideaGenerationOne,"I think on the app, they should also make it so, um…"
-17:40:40,G1P1,ideaGenerationOne,changes on campus.
-17:40:43,G1P1,ideaGenerationOne,aren't announced.
-17:40:45,G1P2,ideaGenerationOne,Mm-hmm.
-17:40:46,G1P1,ideaGenerationOne,explained.
-17:40:49,G1P2,ideaGenerationOne,Yeah.
+17:26:26,Experimenter 0,break,"Okay, if you could go ahead and stop generating ideas."
+17:26:30,Experimenter 0,break,"Uh, we're going to move into the next session now. In this session,"
+17:26:34,Experimenter 0,break,"Uh, you will once again brainstorm ideas for the same problem following Osborne's rules. However, this time,"
+17:26:40,Experimenter 0,break,You will receive examples that will help you generate more ideas on the same problem.
+17:26:44,Experimenter 0,break,"As you brainstormed, you may have noticed that ideas came quickly at first, and then began to slow down over time."
+17:26:50,Experimenter 0,break,"Uh, this is a common pattern in brainstorming. To help you generate more ideas in this session, we will generate examples using an AI tool."
+17:26:58,Experimenter 0,break,"I'm going to select participant 2,"
+17:27:01,Experimenter 0,break,"To assist with this. Uh, Participant 2,"
+17:27:04,Experimenter 0,break,"Uh, please share your screen with the group."
+17:27:06,Experimenter 0,break,And I've got to make sure you can do that.
+17:27:09,Experimenter 0,break,should be able to…
+17:27:14,Experimenter 0,break,Are you able to share your screen?
+17:27:19,G1P2,break,I'm sending a request.
+17:27:19,Experimenter 0,break,"Okay, perfect. Alright."
+17:27:41,Experimenter 0,break,"Perfect, okay. And if you could go ahead, and I see that you have a web browser open, which is what I was going to ask you next."
+17:27:47,Experimenter 0,break,"Um, would you be willing to use CTRL to press Ctrl-Shift-N at the same time on your keyboard?"
+17:27:55,G1P2,break,Ctrl-Shift-N.
+17:27:56,Experimenter 0,break,Yes.
+17:28:00,Experimenter 0,break,Perfect. And so…
+17:28:04,Experimenter 0,break,What I'm gonna do is I have a link for you to go to.
+17:28:08,Experimenter 0,break,"If you could please, uh, copy and paste that link."
+17:28:08,G1P2,break,Okay.
+17:28:11,Experimenter 0,break,"Uh, into the top of the search bar."
+17:28:20,G1P2,break,Boom!
+17:28:37,G1P2,break,In the search bar?
+17:28:37,Experimenter 0,break,Yes.
+17:28:40,Experimenter 0,break,Perfect. Okay.
+17:28:44,Experimenter 0,break,"Um… now that you have that, I'm going to also share with you"
+17:28:50,Experimenter 0,break,prompt…
+17:28:52,Experimenter 0,break,to give to the AI tool.
+17:28:56,Experimenter 0,break,"Here's that prompt. If you could go ahead and copy and paste that, uh, from the…"
+17:29:01,Experimenter 0,break,"chat into the, uh,"
+17:29:03,Experimenter 0,break,bar that's titled Ask Anything.
+17:29:15,Experimenter 0,break,Perfect.
+17:29:17,Experimenter 0,break,"Awesome. And then, if you scroll down,"
+17:29:20,Experimenter 0,break,I believe that there is a button that has two squares.
+17:29:23,Experimenter 0,break,And that should copy the contents.
+17:29:26,Experimenter 0,break,And then if you could paste those contents into the Zoom chat.
+17:29:42,Experimenter 0,break,"Perfect, okay, and you can go ahead and stop sharing your screen."
+17:29:52,Experimenter 0,break,"I believe the same way that you shared it, there should be, uh… it should be replaced with the stop button now."
+17:30:06,G1P2,break,Where?
+17:30:07,Experimenter 0,break,Um…
+17:30:11,Experimenter 0,break,"It should be right where you had placed, uh, on the bar. Perfect. Excellent."
+17:30:13,G1P2,break,"Oh, there it is."
+17:30:15,Experimenter 0,break,"Okay, and so… let me see where I am here…"
+17:30:17,G1P2,break,Okay.
+17:30:27,Experimenter 0,break,"Okay, um, you both can see… now see the ideas that were generated, uh…"
+17:30:33,Experimenter 0,break,"from the AI, yes?"
+17:30:35,Experimenter 0,break,"Okay, um, so once again…"
+17:30:39,Experimenter 0,break,"that probably will be working on today is called the University Problem. Basically, we would like you to generate ideas or ways to improve your university."
+17:30:45,Experimenter 0,break,Any suggestions you have about how to make the university better are appropriate. You have 10 minutes to verbally brainstorm on this.
+17:30:51,Experimenter 0,break,"Uh, even if you are done before the 10 minutes,"
+17:30:54,Experimenter 0,break,"keep trying to generate ideas, I will return when the 10 minutes are up."
+17:31:00,Experimenter 0,break,Your…
+17:31:04,Experimenter 0,break,your 10-minute timer starts now.
+17:31:09,G1P1,break,"Okay, um…"
+17:31:13,G1P1,break,"So, starting with number 1."
+17:31:18,G1P1,break,That's already available.
+17:31:21,G1P1,break,That's how it works.
+17:31:25,G1P1,break,"Um, as long as…"
+17:31:26,G1P2,break,"Well, having…"
+17:31:27,G1P1,break,Sorry.
+17:31:27,G1P2,break,"Especially for the higher classes, having more availability."
+17:31:33,G1P1,break,Yeah.
+17:31:34,G1P2,break,"Instead of having them so close together or overlapping, so you can only take one option instead of two or whatnot."
+17:31:41,G1P1,break,Yeah.
+17:31:43,G1P2,break,Um…
+17:31:47,G1P1,break,"more options, more opportunities."
+17:31:49,G1P2,break,Mm-hmm.
+17:31:52,G1P2,break,Having a…
+17:31:54,G1P2,break,"having an app or a website that we can do tutoring one-on-one with, that would be awesome."
+17:32:00,G1P1,break,"Yeah. Being able to, like,"
+17:32:01,G1P2,break,Instead of having finance groups.
+17:32:03,G1P1,break,Sorry. Being able to actually reach
+17:32:07,G1P1,break,people easier?
+17:32:09,G1P2,break,Mm-hmm.
+17:32:11,G1P1,break,Um…
+17:32:15,G1P2,break,"And having the accessibility, if it's online, for people that are commuters and stuff, instead of having to come up to"
+17:32:21,G1P2,break,or come up to Stevenville or Tarleton.
+17:32:24,G1P1,break,Mm-hmm.
+17:32:24,G1P2,break,"to do so. Um, oh!"
+17:32:32,G1P1,break,Um…
+17:32:33,G1P2,break,I think we need a more interactive mobile app.
+17:32:36,G1P2,break,Maybe that could be where…
+17:32:36,G1P1,break,I agree.
+17:32:38,G1P2,break,"You can see where available parking spots are, so that I could sensor whenever you go in and out for everywhere."
+17:32:44,G1P2,break,"And they'll tell you… and it has a limit on them, and it tells you who goes in and out, so you know if there's availability."
+17:32:52,G1P1,break,that… definitely a more…
+17:32:55,G1P1,break,"interactive, and like…"
+17:32:57,G1P2,break,Yes.
+17:32:58,G1P1,break,"Unless they're with, like, food options."
+17:33:02,G1P1,break,"estimate for, like, how long something might be."
+17:33:06,G1P1,break,to take. So it's like…
+17:33:09,G1P1,break,"Hey, if this is a busy time, it's gonna be a while."
+17:33:13,G1P2,break,"Or being able to request the transportation that you mentioned earlier on the app, be like, hey, I'm all the way at the football field, I need to go here."
+17:33:13,G1P1,break,Um…
+17:33:22,G1P1,break,Yes.
+17:33:25,G1P1,break,Um…
+17:33:26,G1P1,break,"Basically, app for everything."
+17:33:29,G1P1,break,Um…
+17:33:30,G1P2,break,"transportation to get to other food establishments, like people that live on campus that don't have vehicles, or don't want to leave because if they leave, they don't have parking."
+17:33:37,G1P2,break,"They can be like, oh, I want to request a ride to this food place."
+17:33:42,G1P1,break,Yes.
+17:33:44,G1P2,break,"And it's just for students, not for everyone else in Steamville."
+17:33:47,G1P1,break,"Yeah,"
+17:33:50,G1P1,break,Um…
+17:33:52,G1P1,break,"Sustainability Challenge Program, where students can participate."
+17:33:57,G1P1,break,That sounds like… so…
+17:34:00,G1P1,break,Um…
+17:34:02,G1P1,break,"So, just reading it out loud, introduce a sustainability challenge program where students can participate in eco-friendly initiatives and earn rewards."
+17:34:13,G1P1,break,"I feel like that would be really fun, and just, like,"
+17:34:17,G1P1,break,"There can be different types of things. So, it's like…"
+17:34:22,G1P1,break,"if someone's not good at one thing, they can't, like, there's a different thing that they might be. Or, like,"
+17:34:29,G1P1,break,if there's something…
+17:34:31,G1P1,break,So there's different things where people will actually be interested.
+17:34:38,G1P1,break,"And, um…"
+17:34:40,G1P1,break,"And that can also help the, like, community."
+17:34:42,G1P2,break,"Yeah, but also getting rewards. People are reward-motivated, especially with food."
+17:34:48,G1P2,break,why I'm food-motivated.
+17:34:51,G1P2,break,"So, earnings for food, please?"
+17:34:52,G1P1,break,"Or it's like, you can, like, maybe if it's, like,"
+17:34:55,G1P1,break,"So it can be food, but it can also be, like, text inbox."
+17:34:59,G1P2,break,Mm-hmm.
+17:35:00,G1P1,break,"you earn some of that, and then some bucks can be used all over campus."
+17:35:04,G1P2,break,Yep.
+17:35:05,G1P1,break,I believe. Um…
+17:35:07,G1P1,break,virtual mentor… mentorship program connecting students with alumni for career guidance and networking.
+17:35:13,G1P2,break,That would be awesome for… especially for the master's level psychology.
+17:35:19,G1P1,break,Yes. Um…
+17:35:21,G1P2,break,"Even undergrad, too, because a lot of undergrad"
+17:35:25,G1P2,break,need to have the mentorship so they know what to do.
+17:35:28,G1P2,break,especially with the specialization stuff.
+17:35:31,G1P1,break,"I think just some kind of, like…"
+17:35:35,G1P1,break,Communication system where it's like…
+17:35:38,G1P1,break,you're able to…
+17:35:41,G1P1,break,find people.
+17:35:43,G1P1,break,And… that…
+17:35:46,G1P1,break,"might be able to give you advice, or, um…"
+17:35:51,G1P1,break,Or it just might be…
+17:35:54,G1P1,break,able to talk through situations.
+17:35:56,G1P2,break,you lost what… I lost you.
+17:35:57,G1P2,break,Can't hear you.
+17:35:58,G1P1,break,"Oh, can you hear me now?"
+17:36:02,G1P1,break,Or is it just…
+17:36:06,G1P2,break,I can't hear you!
+17:36:07,G1P1,break,"Hello, hello, hello."
+17:36:11,G1P1,break,Hello?
+17:36:11,G1P2,break,I can hear you now.
+17:36:13,G1P2,break,"Yeah, I can hear you."
+17:36:17,G1P1,break,Can you hear me now.
+17:36:18,G1P2,break,Yeah.
+17:36:18,G1P1,break,"Okay, I don't know what. Um…"
+17:36:24,G1P1,break,"I was basically just continuing with the… just some type of, like, communication system."
+17:36:30,G1P1,break,"to be able to, like, talk through things where people might… but, like,"
+17:36:31,G1P2,break,Mm-hmm.
+17:36:38,G1P1,break,"In an interesting, not forced…"
+17:36:40,G1P1,break,"type of way. Or is, like…"
+17:36:41,G1P2,break,Yeah.
+17:36:43,G1P1,break,enjoyable.
+17:36:45,G1P2,break,Mm-hmm.
+17:36:45,G1P1,break,but also helpful.
+17:36:48,G1P2,break,Yeah.
+17:36:50,G1P2,break,"Well, also, if there's, like, a list, like, an app or a website where there's a list of alumni that's, like,"
+17:36:57,G1P2,break,"in whatever department you are, and then they're like, oh, these are the jobs that there is, so if you have an interest,"
+17:37:02,G1P2,break,"And something that you could talk to them, and then…"
+17:37:04,G1P2,break,"get the inside scoop on that before you make the decision, or to further your special…"
+17:37:10,G1P2,break,"specialization in that, or…"
+17:37:11,G1P2,break,"or pursue that in the future, be like, if this isn't for me,"
+17:37:15,G1P2,break,"That would be awesome to have that kind of stuff, because right now, you'd have to, like,"
+17:37:19,G1P2,break,"go out and go to these places, and not everybody's receptive of those kind of questions."
+17:37:24,G1P1,break,Yep.
+17:37:26,G1P1,break,Um…
+17:37:44,G1P2,break,We need better…
+17:37:47,G1P2,break,"like, mobile app to also…"
+17:37:49,G1P2,break,"going back to the mobile app on number 3, I feel like if they were to make a mobile app that actually had an… the announcements you said we need better announcements,"
+17:37:57,G1P2,break,"and programs and activities,"
+17:37:59,G1P2,break,"And, like, if they're gonna do get-togethers like that, I think they need to have it all in one place, instead of being like, oh, follow this on Instagram, this on Instagram, this on Instagram, or this on Facebook."
+17:38:07,G1P2,break,"And it's, like, all in one place, because, I mean, you can go to…"
+17:38:11,G1P2,break,"Tarleton State University, but…"
+17:38:13,G1P2,break,"they have to go through, like, all these different steps to get to the calendar, and then sometimes it's…"
+17:38:17,G1P2,break,"not always on there, because it's, like, pop-up kind of thing."
+17:38:22,G1P1,break,"And then, also just a variety of stuff."
+17:38:26,G1P1,break,"So, like, it's not just sports-type things."
+17:38:26,G1P2,break,Mm-hmm.
+17:38:30,G1P2,break,"Yes, yes."
+17:38:31,G1P1,break,"So, like…"
+17:38:35,G1P1,break,along… because…
+17:38:37,G1P1,break,if they're… yeah.
+17:38:41,G1P1,break,Um…
+17:38:51,G1P1,break,"I feel like more activities just for, like, gradu- like, grad students."
+17:38:56,G1P2,break,Mm-hmm.
+17:38:58,G1P1,break,Because I feel…
+17:39:02,G1P2,break,A lot of stuff happens while we're in class.
+17:39:04,G1P2,break,"Or it happens, and it's, like, advertised… well, not really advertised, but announced for… to the undergrad, or that is to the grad students."
+17:39:11,G1P1,break,Mm-hmm.
+17:39:12,G1P2,break,"towards leaning more towards them, like, oh, interact with…"
+17:39:15,G1P2,break,"other people, it's like, but I want to interact with"
+17:39:18,G1P2,break,"grad students. Outside of class, though."
+17:39:20,G1P1,break,Yeah.
+17:39:23,G1P1,break,Um…
+17:39:29,G1P2,break,"On a fun plane. Like, fun stuff, not…"
+17:39:32,G1P2,break,group projects and stuff.
+17:39:34,G1P2,break,That's the only interaction I do outside of class with other grad students.
+17:40:00,G1P2,break,"This might not be Tarleton-related, but this might be Stephenville-related, but having something that we can do."
+17:40:05,G1P2,break,besides drink or go shopping.
+17:40:08,G1P2,break,consumable.
+17:40:11,G1P2,break,"like an arcade or something, something for everyone to go out and do."
+17:40:16,G1P1,break,And opportunities that don't cost.
+17:40:19,G1P2,break,"Oh, yeah."
+17:40:19,G1P1,break,Too much.
+17:40:35,G1P1,break,"I think on the app, they should also make it so, um…"
+17:40:40,G1P1,break,changes on campus.
+17:40:43,G1P1,break,aren't announced.
+17:40:45,G1P2,break,Mm-hmm.
+17:40:46,G1P1,break,explained.
+17:40:49,G1P2,break,Yeah.
 17:41:06,Experimenter 0,break,"Okay, um, your time is up."
 17:41:08,Experimenter 0,break,"Please stop generating ideas. Um, so we have completed the generation portion of the experiment."
 17:41:16,Experimenter 0,break,"Um, and we're going to move into the idea selection, uh,"
