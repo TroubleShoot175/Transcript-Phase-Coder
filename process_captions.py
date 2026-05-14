@@ -29,8 +29,14 @@ Usage:
     python process_captions.py transcript.txt -o out.csv
     python process_captions.py transcript.txt --list-phases
     python process_captions.py transcript.txt --phases ideaGenerationOne,ideaGenerationTwo
+    python process_captions.py transcript.txt --keep-fillers
     python process_captions.py input.srt
     python process_captions.py input.vtt -o output.csv --include-timestamps
+
+Filler cleaning (transcript mode, on by default):
+  Removes filler words and phrases — um, uh, like, you know, okay, yeah —
+  from content and drops rows that become empty after cleaning.
+  Use --keep-fillers to disable.
 """
 
 import re
@@ -138,6 +144,53 @@ def assign_phases(rows: list[dict]) -> tuple[list[dict], list[str]]:
             )
 
     return rows, warnings
+
+
+# ---------------------------------------------------------------------------
+# Filler language cleaning
+# ---------------------------------------------------------------------------
+
+# Multi-word phrases must come before single words so they are matched first.
+_FILLER_PATTERNS = [
+    re.compile(r'\byou\s+know\b',  re.IGNORECASE),
+    re.compile(r'\bum+\b',         re.IGNORECASE),
+    re.compile(r'\buh+\b',         re.IGNORECASE),
+    re.compile(r'\blike\b',        re.IGNORECASE),
+    re.compile(r'\bokay\b',        re.IGNORECASE),
+    re.compile(r'\byeah\b',        re.IGNORECASE),
+]
+
+
+def clean_fillers(text: str) -> str:
+    """Remove filler words/phrases from a string and tidy up leftover punctuation."""
+    for pat in _FILLER_PATTERNS:
+        text = pat.sub("", text)
+    # Remove orphaned commas, ellipses, and dots left after extraction
+    text = re.sub(r"[,…\.]+\s*[,…\.]+", ".", text)  # collapse repeated punctuation
+    text = re.sub(r"^\s*[,;…\.]+", "", text)          # strip leading punctuation
+    text = re.sub(r"[,;…\.]+\s*$", "", text)          # strip trailing punctuation
+    text = re.sub(r"[ \t]{2,}", " ", text)             # collapse multiple spaces
+    return text.strip()
+
+
+def apply_filler_cleaning(rows: list[dict]) -> tuple[list[dict], int]:
+    """
+    Apply filler cleaning to every row's content in-place.
+    Rows whose content becomes empty after cleaning are dropped.
+
+    Returns:
+        cleaned rows, number of rows dropped
+    """
+    cleaned = []
+    dropped = 0
+    for row in rows:
+        text = clean_fillers(row["content"])
+        if text:
+            row["content"] = text
+            cleaned.append(row)
+        else:
+            dropped += 1
+    return cleaned, dropped
 
 
 # ---------------------------------------------------------------------------
@@ -324,6 +377,15 @@ def main():
         help="Print a phase breakdown with row counts and first/last timestamps, then exit.",
     )
     parser.add_argument(
+        "--keep-fillers",
+        action="store_true",
+        help=(
+            "(Transcript mode only) Disable filler language cleaning. "
+            "By default, filler words (um, uh, like, you know, okay, yeah) are removed "
+            "and rows that become empty after cleaning are dropped."
+        ),
+    )
+    parser.add_argument(
         "--include-timestamps",
         action="store_true",
         help="(SRT/VTT only) Also include raw start_seconds and end_seconds columns",
@@ -350,6 +412,12 @@ def main():
 
         for w in warnings:
             print(f"WARNING: {w}", file=sys.stderr)
+
+        # Filler cleaning (on by default, disabled by --keep-fillers)
+        if not args.keep_fillers:
+            rows, dropped = apply_filler_cleaning(rows)
+            if dropped:
+                print(f"Note: {dropped} row(s) dropped after filler cleaning.", file=sys.stderr)
 
         # --list-phases: summary and exit
         if args.list_phases:
